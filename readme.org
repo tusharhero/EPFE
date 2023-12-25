@@ -1,0 +1,26 @@
+#+title: README for my personal Emacs package build
+#+author: tusharhero
+#+email: tusharhero@sdf.org
+* Emacs PKGBUILD For ECFPAW (EPFE)
+
+I will be using this package build to get a working, Emacs installing
+for my configuration of Emacs [fn:1]. I have simply forked the AUR
+PKGBUILD [fn:2].
+
+I will try to make sure to get *ALL* dependencies installed through
+this single package. I also need this because I have find myself using
+Distrobox/Toolbox Archlinux containers often and I need to install additional
+packages to get it working.
+
+  | Dependency         | Reason      |
+  |--------------------+-------------|
+  | =noto-fonts-emoji= | Emojis      |
+  | =ttf-iosevka-nerd= | Font        |
+  | =ispell=           | Spellcheck  |
+  | =ghostscript=      | PDF support |
+  | =xpdf=             | PDF support |
+
+* Footnotes
+
+[fn:1] https://codeberg.org/tusharhero/ecfpaw
+[fn:2] https://aur.archlinux.org/emacs-git.git/

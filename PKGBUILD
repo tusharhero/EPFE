@@ -1,4 +1,5 @@
-# Maintainer: Pedro A. López-Valencia <https://aur.archlinux.org/users/toropisco>
+# Maintainer: tusharhero <tusharhero@sdf.org>
+# Upstream Maintainer: Pedro A. López-Valencia <https://aur.archlinux.org/users/toropisco>
 
 ################################################################################
 # CAVEAT LECTOR: This PKGBUILD is highly opinionated. I give you
@@ -86,6 +87,19 @@ DOCS_PDF=         # Generate and install pdf documentation. You need
 NOGZ="YES"        # Don't compress .el files. (Gain is neglible, IMHO)
 
 ################################################################################
+# ECFPAW dependencies                                                          #
+################################################################################
+
+depends+=(
+    'ttf-iosevka-nerd'
+    'noto-fonts-emoji'
+    'ispell'
+    'ghostscript'
+    'xpdf'
+);
+
+
+################################################################################
 
 ################################################################################
 if [[ $CLI == "YES" ]] ; then
@@ -93,8 +107,8 @@ if [[ $CLI == "YES" ]] ; then
 else
   pkgname="emacs-git"
 fi
-pkgver=30.0.50.169253
-pkgrel=2
+pkgver=30.0.50.170196
+pkgrel=1
 pkgdesc="GNU Emacs. Development master branch."
 arch=('x86_64')
 url="http://www.gnu.org/software/emacs/"
