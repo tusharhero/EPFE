@@ -21,6 +21,7 @@ packages to get it working.
   | =ghostscript=      | PDF support                  |
   | =xpdf=             | PDF support                  |
   | =direnv=           | For programming environments |
+  | =ttf-indic-otf=    | Indian fonts support         |
 
 To update the =PKGBUILD= according to the table above, run the
 source block below.

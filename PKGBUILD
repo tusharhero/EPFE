@@ -98,6 +98,7 @@ depends+=(
 'ghostscript'
 'xpdf'
 'direnv'
+'ttf-indic-otf'
 #ecfpaw_depends_end
 );
 
