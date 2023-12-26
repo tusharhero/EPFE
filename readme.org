@@ -12,6 +12,7 @@ this single package. I also need this because I have find myself using
 Distrobox/Toolbox Archlinux containers often and I need to install additional
 packages to get it working.
 
+#+NAME: dependencies
   | Dependency         | Reason                       |
   |--------------------+------------------------------|
   | =noto-fonts-emoji= | Emojis                       |
@@ -21,6 +22,29 @@ packages to get it working.
   | =xpdf=             | PDF support                  |
   | =direnv=           | For programming environments |
 
+To update the =PKGBUILD= according to the table above, run the
+source block below.
+
+#+NAME: update_pkgbuild
+#+begin_src elisp :results silent
+  (let ((dependencies
+         (mapconcat (lambda (dependency)
+                      (format "'%s'" (substring dependency 1 -1)))
+                    (org-table-get-remote-range
+                     "dependencies" "@I$1..@II$1")
+                    "\n"))
+        (beginning
+         (progn
+           (find-file "PKGBUILD")
+           (goto-char (point-min))
+           (re-search-forward "#ecpfaw_depends_begin")
+           (match-end 0)))
+        (ending
+         (progn
+           (re-search-forward "#ecfpaw_depends_end")
+           (match-beginning 0))))
+    (replace-region-contents  beginning ending (lambda () (format "\n%s\n" dependencies))))
+#+end_src
 * Footnotes
 
 [fn:1] https://codeberg.org/tusharhero/ecfpaw

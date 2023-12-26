@@ -91,12 +91,14 @@ NOGZ="YES"        # Don't compress .el files. (Gain is neglible, IMHO)
 ################################################################################
 
 depends+=(
-    'ttf-iosevka-nerd'
-    'noto-fonts-emoji'
-    'ispell'
-    'ghostscript'
-    'xpdf'
-    'direnv'
+#ecpfaw_depends_begin
+'noto-fonts-emoji'
+'ttf-iosevka-nerd'
+'ispell'
+'ghostscript'
+'xpdf'
+'direnv'
+#ecfpaw_depends_end
 );
 
 
@@ -108,7 +110,7 @@ if [[ $CLI == "YES" ]] ; then
 else
   pkgname="emacs-git"
 fi
-pkgver=30.0.50.170196
+pkgver=30.0.50.170199
 pkgrel=1
 pkgdesc="GNU Emacs. Development master branch."
 arch=('x86_64')
