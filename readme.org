@@ -12,13 +12,14 @@ this single package. I also need this because I have find myself using
 Distrobox/Toolbox Archlinux containers often and I need to install additional
 packages to get it working.
 
-  | Dependency         | Reason      |
-  |--------------------+-------------|
-  | =noto-fonts-emoji= | Emojis      |
-  | =ttf-iosevka-nerd= | Font        |
-  | =ispell=           | Spellcheck  |
-  | =ghostscript=      | PDF support |
-  | =xpdf=             | PDF support |
+  | Dependency         | Reason                       |
+  |--------------------+------------------------------|
+  | =noto-fonts-emoji= | Emojis                       |
+  | =ttf-iosevka-nerd= | Font                         |
+  | =ispell=           | Spellcheck                   |
+  | =ghostscript=      | PDF support                  |
+  | =xpdf=             | PDF support                  |
+  | =direnv=           | For programming environments |
 
 * Footnotes
 

@@ -96,6 +96,7 @@ depends+=(
     'ispell'
     'ghostscript'
     'xpdf'
+    'direnv'
 );
 
 
