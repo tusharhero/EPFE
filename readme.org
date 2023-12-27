@@ -13,15 +13,24 @@ Distrobox/Toolbox Archlinux containers often and I need to install additional
 packages to get it working.
 
 #+NAME: dependencies
-  | Dependency         | Reason                       |
-  |--------------------+------------------------------|
-  | =noto-fonts-emoji= | Emojis                       |
-  | =ttf-iosevka-nerd= | Font                         |
-  | =ispell=           | Spellcheck                   |
-  | =ghostscript=      | PDF support                  |
-  | =xpdf=             | PDF support                  |
-  | =direnv=           | For programming environments |
-  | =ttf-indic-otf=    | Indian fonts support         |
+  | Dependency                 | Reason                       |
+  |----------------------------+------------------------------|
+  | =noto-fonts-emoji=         | Emojis                       |
+  | =ttf-iosevka-nerd=         | Font                         |
+  | =ispell=                   | Spellcheck                   |
+  | =ghostscript=              | PDF support                  |
+  | =xpdf=                     | PDF support                  |
+  | =direnv=                   | For programming environments |
+  | =ttf-indic-otf=            | Indian fonts support         |
+  | =texlive-basic=            | Org-Mode PDF export support  |
+  | =texlive-fontsrecommended= | Org-Mode PDF export support  |
+  | =texlive-latexrecommended= | Org-Mode PDF export support  |
+  | =texlive-mathscience=      | Org-Mode PDF export support  |
+  | =texlive-binextra=         | Org-Mode PDF export support  |
+  | =texlive-latexextra=       | Org-Mode PDF export support  |
+  | =texlive-fontsextra=       | Org-Mode PDF export support  |
+  | =texlive-latexextra=       | Org-Mode PDF export support  |
+  | =texlive-plaingeneric=     | Org-Mode PDF export support  |
 
 To update the =PKGBUILD= according to the table above, run the
 source block below.

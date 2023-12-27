@@ -99,6 +99,15 @@ depends+=(
 'xpdf'
 'direnv'
 'ttf-indic-otf'
+'texlive-basic'
+'texlive-fontsrecommended'
+'texlive-latexrecommended'
+'texlive-mathscience'
+'texlive-binextra'
+'texlive-latexextra'
+'texlive-fontsextra'
+'texlive-latexextra'
+'texlive-plaingeneric'
 #ecfpaw_depends_end
 );
 
