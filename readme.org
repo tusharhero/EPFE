@@ -13,24 +13,27 @@ Distrobox/Toolbox Archlinux containers often and I need to install additional
 packages to get it working.
 
 #+NAME: dependencies
-  | Dependency                 | Reason                       |
-  |----------------------------+------------------------------|
-  | =noto-fonts-emoji=         | Emojis                       |
-  | =ttf-iosevka-nerd=         | Font                         |
-  | =ispell=                   | Spellcheck                   |
-  | =ghostscript=              | PDF support                  |
-  | =xpdf=                     | PDF support                  |
-  | =direnv=                   | For programming environments |
-  | =ttf-indic-otf=            | Indian fonts support         |
-  | =texlive-basic=            | Org-Mode PDF export support  |
-  | =texlive-fontsrecommended= | Org-Mode PDF export support  |
-  | =texlive-latexrecommended= | Org-Mode PDF export support  |
-  | =texlive-mathscience=      | Org-Mode PDF export support  |
-  | =texlive-binextra=         | Org-Mode PDF export support  |
-  | =texlive-latexextra=       | Org-Mode PDF export support  |
-  | =texlive-fontsextra=       | Org-Mode PDF export support  |
-  | =texlive-latexextra=       | Org-Mode PDF export support  |
-  | =texlive-plaingeneric=     | Org-Mode PDF export support  |
+  | Dependency                 | Reason                        |
+  |----------------------------+-------------------------------|
+  | =noto-fonts-emoji=         | Emojis                        |
+  | =ttf-iosevka-nerd=         | Font                          |
+  | =ispell=                   | Spellcheck                    |
+  | =ghostscript=              | PDF support                   |
+  | =xpdf=                     | PDF support                   |
+  | =direnv=                   | For programming environments  |
+  | =ttf-indic-otf=            | Indian fonts support          |
+  | =texlive-basic=            | 'org-mode' PDF export support |
+  | =texlive-fontsrecommended= | 'org-mode' PDF export support |
+  | =texlive-latexrecommended= | 'org-mode' PDF export support |
+  | =texlive-mathscience=      | 'org-mode' PDF export support |
+  | =texlive-binextra=         | 'org-mode' PDF export support |
+  | =texlive-latexextra=       | 'org-mode' PDF export support |
+  | =texlive-fontsextra=       | 'org-mode' PDF export support |
+  | =texlive-latexextra=       | 'org-mode' PDF export support |
+  | =texlive-plaingeneric=     | 'org-mode' PDF export support |
+  | =imagemagick=              | 'org-mode' latex math preview |
+  | =poppler-glib=             | Support for 'PDFtools'        |
+  | =wl-clipboard=             | Support for 'org-download'    |
 
 To update the =PKGBUILD= according to the table above, run the
 source block below.

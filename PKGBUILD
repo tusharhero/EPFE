@@ -108,6 +108,9 @@ depends+=(
 'texlive-fontsextra'
 'texlive-latexextra'
 'texlive-plaingeneric'
+'imagemagick'
+'poppler-glib'
+'wl-clipboard'
 #ecfpaw_depends_end
 );
 
