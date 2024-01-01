@@ -56,7 +56,8 @@ source block below.
          (progn
            (re-search-forward "#ecfpaw_depends_end")
            (match-beginning 0))))
-    (replace-region-contents  beginning ending (lambda () (format "\n%s\n" dependencies))))
+    (replace-region-contents  beginning ending (lambda () (format "\n%s\n" dependencies)))
+    (save-buffer))
 #+end_src
 * Footnotes
 
