@@ -94,7 +94,8 @@ depends+=(
 #ecpfaw_depends_begin
 'noto-fonts-emoji'
 'ttf-iosevka-nerd'
-'ispell'
+'aspell'
+'aspell-en'
 'ghostscript'
 'xpdf'
 'direnv'

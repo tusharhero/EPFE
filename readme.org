@@ -17,7 +17,8 @@ packages to get it working.
   |----------------------------+-------------------------------|
   | =noto-fonts-emoji=         | Emojis                        |
   | =ttf-iosevka-nerd=         | Font                          |
-  | =ispell=                   | Spellcheck                    |
+  | =aspell=                   | Spellcheck                    |
+  | =aspell-en=                | English dictionary for aspell |
   | =ghostscript=              | PDF support                   |
   | =xpdf=                     | PDF support                   |
   | =direnv=                   | For programming environments  |
