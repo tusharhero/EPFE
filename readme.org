@@ -16,6 +16,7 @@ packages to get it working.
   | Dependency                 | Reason                        |
   |----------------------------+-------------------------------|
   | =noto-fonts-emoji=         | Emojis                        |
+  | =cmake=                    | To compile vterm              |
   | =ttf-iosevka-nerd=         | Font                          |
   | =aspell=                   | Spellcheck                    |
   | =aspell-en=                | English dictionary for aspell |
